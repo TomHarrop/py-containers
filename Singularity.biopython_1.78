@@ -15,12 +15,12 @@ From: python:3.8.6-buster
     exec /usr/local/bin/python3 "$@"
 
 %post
-        /usr/local/bin/python3 \ 
+        /usr/local/bin/python3 \
         	-m pip install \
         	--upgrade \
         	--no-cache-dir \
         	pip setuptools wheel
-        	
+
         /usr/local/bin/python3 \
         	-m pip install \
 	        biopython==1.78 \
